@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+.header_song{
+    padding: 2rem;
+    color: white;
+    border-bottom: 3px solid white;
+    background: red;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    box-shadow: inset 2px 2px 20px rgb(130, 1, 1);
+    filter: drop-shadow(2px 2px 10px grey);
+}
+
+.tag{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    padding: 5px;
+    background: white;
+    text-align: center;
+    position: relative;
+    margin: -18px auto;
+    border-radius: 50px;
+}
+
+.tag h4{
+    padding: 0 10%;
+}
+
+
+.song_list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.spacing{
+    margin: 20rem;
+}
+
+#audio_player{
+    filter:drop-shadow( 1px 1px 10px black);
+}
+
+.song{
+    margin: 1.4rem auto;
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    background: white;
+    border: none;
+    box-shadow: inset 1px 1px 10px grey;
+    border-radius: 50px;
+    padding: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    filter: drop-shadow(1px 1px 5px black);
+}
+
+.song:hover{
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+}
+
+.tag{
+    width: 50%;
+}
+
+.tag:hover{
+    background: black;
+    color: white;
+}
+
+.circle{
+    background: rgb(83, 62, 0);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.player{
+    position:fixed;
+    bottom: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    background: rgb(255, 0, 0);
+    border-radius: 50px;
+    left: 37%;
+    margin: 1rem 0;
+    box-shadow: inset 2px 2px 20px maroon;
+    filter: drop-shadow(1px 1px 10px rgb(0, 0, 0));
+}
+
+.player h3{
+    color: white;
+    padding: 2px 0 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .song_list{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .tag h4{
+    padding: 0 10%;
+    }
+
+    .song{
+        margin: .2rem auto;
+    }
+
+    .circle{
+        height: 10px;
+        width: 10px;
+    }
+
+    .player{
+        width: 19rem;
+        left: 3%;
+        margin: 1rem auto;
+    }
+
+
+}
